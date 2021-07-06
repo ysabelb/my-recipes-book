@@ -1,3 +1,8 @@
 body {
-    background: #faf7cd ;   
+    background-image: url("../images/background.jpg");
+    /* https://pixabay.com/images/id-2142309/ */
+
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
