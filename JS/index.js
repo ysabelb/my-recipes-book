@@ -27,5 +27,40 @@ const recipe = {
       }
     }
   }
+
   
 
+const validationName = document.querySelector("#input-validation-name");
+const validationIngredients = document.querySelector("#input-validation-ingredients");
+const validationMethod = document.querySelector("#input-validation-method");
+
+const newRecipeName = document.querySelector("#new-recipe-name");
+const newRecipeIngredients = document.querySelector("#new-recipe-ingredients");
+const newRecipeMethod = document.querySelector("#new-recipe-method");
+
+const addRecipe = document.querySelector("#addRecipe");
+addRecipe.addEventListener("click",newRecipe);
+  // function newRecipe (event) {
+  //     event.preventDefault();
+  //     if(newRecipeName.value === '' || newRecipeIngredients.value === '' || newRecipeMethod.value === '') {
+  //       validationName.innerHTML = "Please add your notes"
+  //       validationIngredients.innerHTML = "Please add your notes"
+  //       validationMethod.innerHTML = "Please add your notes"
+  //     }
+  //   }  
+   
+    function newRecipe (event) {
+      event.preventDefault();
+      if(newRecipeName.value === '' && newRecipeIngredients.value === '' && newRecipeMethod.value === '') {
+        validationName.innerHTML = "Please add your notes"
+        validationIngredients.innerHTML = "Please add your notes"
+        validationMethod.innerHTML = "Please add your notes"
+      } else if (newRecipeIngredients.value === ''){
+        validationIngredients.innerHTML = "Please add your notes"
+      } else if (newRecipeMethod.value === '') {
+        validationMethod.innerHTML = "Please add your notes"
+      } else {
+        event.target.reset();
+      }
+
+    }   
