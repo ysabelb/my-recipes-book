@@ -18,3 +18,8 @@ Create a simple recipe app that should:
 * BootStrap frameworks
 
 
+### Example
+
+[Check out a live example](https://ysabelb.github.io/my-recipes-book/)
+
+<img src="./images/mockup.jpg" height="500" />
