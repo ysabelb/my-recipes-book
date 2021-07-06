@@ -9,7 +9,7 @@
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>My recipes Book</title>
+    <title>All my recipes </title>
   </head>
 
   <body>
@@ -17,7 +17,7 @@
     <div class="container mt-5 px-5">
     
     <header>
-    <h1 class="text-center m-5"> My Recipes Book</h1>
+    <h1 class="text-center m-5"> My New Recipe </h1>
     </header>
    
   
@@ -43,14 +43,25 @@
 
         <!-- Button Add Recipe-->
         <div class="text-center mt-1">
-          <button id="addRecipe" type="submit"  class="btn btn-primary mb-3 ">Add Recipe</button>
+          <button id="addRecipe" type="submit"  class="btn btn-success mb-3 ">Add Recipe</button>
         </div>
 
       </form>
      
 
-    <!-- Cards Start here  -->
-    <div class="row row-cols-1 row-cols-md-2 g-4 ">
+      <!-- Display Recipes  -->
+      <div>
+        <h2 class="text-center m-4">My Recipes Book</h2>
+        <button type="button" id="btnDisplay" class="btn btn-success mb-4">
+          Display my Recipes
+        </button>
+        <div id="displayCard"></div>
+      </div>
+
+
+
+    <!-- Hard coded cards Mock up   -->
+    <!-- <div class="row row-cols-1 row-cols-md-2 g-4 ">
   <div class="col">
     <div class="card">
       <div class="card-body">
@@ -99,7 +110,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
   
     </div> 
